@@ -39,9 +39,9 @@ bot = Client(
     bot_token=BOT_TOKEN
 )
 
-API_ID    = os.environ.get("API_ID", "24495656")
-API_HASH  = os.environ.get("API_HASH", "61afcf68c6429714dd18acd07f246571")
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "7842202956:AAHgKbWG5FSQhRdcovXmqaEYlPMd-dQu630") 
+API_ID    = os.environ.get("API_ID", "20838202")
+API_HASH  = os.environ.get("API_HASH", "fde3e78e3256ae13e868b39088c83838")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "7833200152:AAFguI-SanvyZX28ipUvNeP7Zi2wuZTDS5I") 
 
 # Define aiohttp routes
 routes = web.RouteTableDef()
@@ -68,11 +68,11 @@ import random
 keyboard = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="📞 Contact", url="https://t.me/sanjaykagra86"),
-            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/SSC_Aspirants_7"),
+            InlineKeyboardButton(text="📞 Contact", url="https://t.me/Vikashjdbot"),
+            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/Vikashjdbot"),
         ],
         [
-            InlineKeyboardButton(text="🪄 Updates Channel", url="https://t.me/SSC_Aspirants_7"),
+            InlineKeyboardButton(text="🪄 Updates Channel", url="https://t.me/Vikashjdbot"),
         ],
     ]
 )
@@ -81,11 +81,11 @@ keyboard = InlineKeyboardMarkup(
 Busy = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="📞 Contact", url="https://t.me/sanjaykagra86"),
-            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/SSC_Aspirants_7"),
+            InlineKeyboardButton(text="📞 Contact", url="https://t.me/Vikashjdbot"),
+            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/Vikashjdbot"),
         ],
         [
-            InlineKeyboardButton(text="🪄 Updates Channel", url="https://t.me/SSC_Aspirants_7"),
+            InlineKeyboardButton(text="🪄 Updates Channel", url="https://t.me/Vikashjdbot"),
         ],
     ]
 )
@@ -120,8 +120,8 @@ async def start_command(bot: Client, message: Message):
         "➠ **𝐈 𝐚𝐦 𝐚 𝐓𝐞𝐱𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐖𝐢𝐭𝐡 ♥️**\n"
         "➠ **Can Extract Videos & PDFs From Your Text File and Upload to Telegram!**\n"
         "➠ **For Guide Use Command /guide 📖**\n\n"
-        "➠ **Use /moni Command to Download From TXT File** 📄\n\n"
-        "➠ **𝐌𝐚𝐝𝐞 𝐁𝐲:** @SanjayKagra86🩷"
+        "➠ **Use /namaste Command to Download From TXT File** 📄\n\n"
+        "➠ **𝐌𝐚𝐝𝐞 𝐁𝐲:** ꪜᎥᴋꫝꜱʜ KᴀꜱʜʏᴀᎮ"
     )
 
     # Send the image with caption and buttons
@@ -201,7 +201,7 @@ async def guide_handler(client: Client, message: Message):
         "📖 **Usage**:\n\n"
         "1. `/add_channel -100{channel_id}` - Add a channel to the bot.\n"
         "2. `/remove_channel -100{channel_id}` - Remove a channel from the bot.\n"
-        "3. `/moni .txt` file command - Process the .txt file.\n"
+        "3. `/namaste .txt` file command - Process the .txt file.\n"
         "4. `/stop` - Stop the task running in the bot. 🚫\n\n"
         "If you have any questions, feel free to ask! 💬"
     )
@@ -260,8 +260,8 @@ async def stop_handler(client, message: Message):
     await message.reply_text("♦️ 𝐒𝐭𝐨𝐩𝐩𝐞𝐝 ♦️", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
-@bot.on_message(filters.command("moni"))
-async def moni_handler(client: Client, m: Message):
+@bot.on_message(filters.command("namaste"))
+async def namaste_handler(client: Client, m: Message):
     editable = await m.reply_text('𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐀 𝐓𝐱𝐭 𝐅𝐢𝐥𝐞 𝐒𝐞𝐧𝐝 𝐇𝐞𝐫𝐞 ⏍')
 
     try:
@@ -352,7 +352,7 @@ async def moni_handler(client: Client, m: Message):
     # Default credit message
     credit = "️ ⁪⁬⁮⁮⁮"
     if raw_text3 == 'de':
-        CR = '@SanjayKagra86🩷'
+        CR = '@Vikashjdbot'
     elif raw_text3:
         CR = raw_text3
     else:
@@ -460,8 +460,8 @@ async def moni_handler(client: Client, m: Message):
                      
             try:  
                 
-                cc = f'**🎥 VIDEO ID: {str(count).zfill(3)}.\n\n📄 Title: {name1} {res} ⎳𝓸𝓿𝓮❥❤️━━╬٨ﮩSanju٨ـﮩـ Love❥.mkv\n\n<pre><code>🔖 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}**'
-                cc1 = f'**📁 FILE ID: {str(count).zfill(3)}.\n\n📄 Title: {name1} 𝄟✮͢🦋⃟≛⃝m✮⃝oni.pdf \n\n<pre><code>🔖 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}**'
+                cc = f'**🎥 VIDEO ID: {str(count).zfill(3)}.\n\n📄 Title: {name1} {res} ꪜᎥᴋꫝꜱʜ KᴀꜱʜʏᴀᎮ.mkv\n\n<pre><code>🔖 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}**'
+                cc1 = f'**📁 FILE ID: {str(count).zfill(3)}.\n\n📄 Title: {name1} ꪜᎥᴋꫝꜱʜ KᴀꜱʜʏᴀᎮ.pdf \n\n<pre><code>🔖 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}**'
                                  
                 
                 if "drive" in url:
@@ -517,7 +517,7 @@ async def moni_handler(client: Client, m: Message):
                           
                 else:
                     Show = f"❊⟱ 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 ⟱❊ »\n\n📄 Title:- `{name}\n\n⌨ 𝐐𝐮𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**🔗 𝐔𝐑𝐋 »** `{url}`"
-                    prog = await m.reply_text(f"**Downloading:-**\n\n**📄 Title:-** `{name}\n\nQuality - {raw_text2}`\n\n**Link:**`{url}`\n\n**Bot Made By SanjaKagra86🩷 **")
+                    prog = await m.reply_text(f"**Downloading:-**\n\n**📄 Title:-** `{name}\n\nQuality - {raw_text2}`\n\n**Link:**`{url}`\n\n**Bot Made By ꪜᎥᴋꫝꜱʜ KᴀꜱʜʏᴀᎮ **")
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
                     await prog.delete(True)
